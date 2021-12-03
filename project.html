@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WebDevs</title>
+        <meta name="description" content="Learn HTML and CSS">
+        <meta name="author" content="Josephine Nguyen">
+
+        <link rel="shortcut icon" href="assets/icon.png">
+        <link rel="stylesheet" href="assets/styles.css">
+        <link rel="stylesheet" href="assets/navbar.css">
+        <link rel="stylesheet" href="assets/project.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="headerContainer clearfix">
+                <h1 class="title">WebDevs</h1>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a onclick="changeThemes()">themes</a></li>
+                    <li><a href="project.html">my project</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="spacer">
+            &nbsp;
+        </div>
+
+        <div class="projectContainer">
+            <div id="progressBarContainer"></div>
+            <div id="text">
+                <div id="textActivity1">
+                    <p>Welcome to your first coding activity! Before you begin coding away, let's first talk about what HTML is.</p>
+                    <p>HTML stands for Hyper Text Markup Language and it describes the structure of a web page. Everything that you see on a web page is basically came from HTML, like this text!</p>
+                    <p>You can create your own HTML page by creating an .html file and including the basic structure:</p>
+                    <code>
+                        &lt;!DOCTYPE html><br>
+                        &lt;html><br>
+                        &emsp;&lt;head><br>
+                        &emsp;&emsp;&lt;title>Page Title&lt;&sol;title><br>
+                        &emsp;&lt;&sol;head><br>
+                        &emsp;&lt;body><br>
+                            <br>
+                            &emsp;&lt;h1>HTML is cool!&lt;&sol;h1><br>
+                            &emsp;&lt;p>Space is cool!&lt;&sol;p><br>
+                            <br>
+                            &emsp;&lt;&sol;body><br>
+                        &lt;&sol;html><br>
+                    </code>
+                    <p>You might have noticed that HTML uses these brackets <code><></code> to form elements, these are called tags. For each opening tag, you also need a closing one when you are done. The closing tag looks like this: <code></></code></p>
+                    <p>If you want to display text on the page, the popular tags to use are <code>h1, h2, h3, h4, h5, h6, p, a</code> The h tags are used for headings, the p tag is used for writing a paragraph, and the a tag is used to include links to other files or websites. You can link something by including <code>href="some link"</code> next to the initial a tag.</p>
+                    <p>Try to use your knowledge on tags to display the right order of planets!</p>
+                </div>
+                <div id="textActivity2">
+
+                </div>
+                <div id="textActivity3">
+
+                </div>
+                <div id="textActivity4">
+
+                </div>
+                <div id="textActivity5">
+
+                </div>
+                <div id="textActivity6">
+
+                </div>
+                <div id="textActivity7">
+
+                </div>
+                <div id="textActivity8">
+
+                </div>
+                <div id="textActivity9">
+
+                </div>
+                <div id="textActivity10">
+
+                </div>
+            </div>
+            <br>
+            <div id="activityArea">
+                <div id="activity1">
+                    <code>
+                        &lt;!DOCTYPE html><br>
+                        &lt;html><br>
+                        &emsp;&lt;head><br>
+                        &emsp;&emsp;&lt;title>Planets&lt;&sol;title><br>
+                        &emsp;&lt;&sol;head><br>
+                        &emsp;&lt;body><br>
+                        <br>
+                        &emsp;&emsp;<input id="q1">The Order of Planets in Our Solar System&lt;&sol;h1><br>
+                        &emsp;&emsp;&lt;p>Mercury<input id="q2"><br>
+                        &emsp;&emsp;&lt;p>Venus&lt;&sol;p><br>
+                        &emsp;&emsp;&lt;p>Earth&lt;&sol;p><br>
+                        &emsp;&emsp;&lt;p>Mars&lt;&sol;p><br>
+                        &emsp;&emsp;&lt;p>Jupiter&lt;&sol;p><br>
+                        &emsp;&emsp;&lt;p>Saturn&lt;&sol;p><br>
+                        &emsp;&emsp;&lt;p>Uranus&lt;&sol;p><br>
+                        &emsp;&emsp;&lt;p>Neptune&lt;&sol;p><br>
+                        <br>
+                        &emsp;&lt;&sol;body><br>
+                        <input id="q3">html><br>
+                    </code>
+                </div>
+                <div id="activity2">
+                    
+                </div>
+                <div id="activity3">
+                    
+                </div>
+                <div id="activity4">
+                    
+                </div>
+                <div id="activity5">
+                    
+                </div>
+                <div id="activity6">
+                    
+                </div>
+                <div id="activity7">
+                    
+                </div>
+                <div id="activity8">
+                    
+                </div>
+                <div id="activity9">
+                    
+                </div>
+                <div id="activity10">
+                    
+                </div>
+            </div>
+            <br>
+            <div id="buttonArea">
+                <button id="showCodeButton" class="hidden" onclick="showOrHideCode()">Show Code</button>
+                <br>
+                <button id="submitButton" onclick="submit()">Submit</button>
+            </div>
+        </div>
+
+        <div id="changeThemesPanel">
+            <button id="closeButton" onclick="closeChangeThemesPanel()">X</button>
+            <h1 id="themesTitle">Change your project theme</h1>
+            <br>
+            <div id="themesButtonContainer">
+                <button id="animals" class="themeBtn" onclick="alert('The Animals project is still under construction, please try our space theme!')">Animals</button>
+                <button id="space" class="themeBtn" onclick="selectTheme(this.id)">Space</button>
+                <button id="foodAndDrink" class="themeBtn" onclick="alert('The Food and Drink project is still under construction, please try our space theme!')">Food and Drink</button>
+            </div>
+            <br><br><br><br><br>
+            <a>Warning: Changing themes will restart your progress!</a>
+        </div>
+
+        <div id="darken"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/scripts.js"></script>
+        <script src="assets/project.js"></script>
+    </body>
+</html>

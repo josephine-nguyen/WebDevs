@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WebDevs</title>
+        <meta name="description" content="Learn HTML and CSS">
+        <meta name="author" content="Josephine Nguyen">
+
+        <link rel="shortcut icon" href="assets/icon.png">
+        <link rel="stylesheet" href="assets/styles.css">
+        <link rel="stylesheet" href="assets/navbar.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="headerContainer clearfix">
+                <h1 class="title">WebDevs</h1>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a onclick="changeThemes()">themes</a></li>
+                    <li><a href="project.html">my project</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </div>
+        </header>
+        
+
+        <div class="spacer">
+            &nbsp;
+        </div>
+
+        <div class="container">
+            <h1 class="welcome">Welcome to WebDevs!</h1>
+            <br>
+            <img style="width: 20%;" src="assets/html_code_review.svg"/>
+            <br>
+            <h2 class="description">
+                WebDevs is a free, interactive website that teaches the core concepts of HTML and CSS in a fun and engaging manner.
+                <br><br>
+                Learners have the chance to pick a thematic project and follow along a series of activies that each demonstrate how a particular aspect of HTML and/or CSS works.
+                <br><br>
+                The completion of each activity is saved, and can be seen under the "my project" tab on the navigation bar.
+            </h2>
+            <a href="index.html">
+                <button>Click here to go back to the home page</button>
+            </a>
+        </div>
+
+        <div id="changeThemesPanel">
+            <button id="closeButton" onclick="closeChangeThemesPanel()">X</button>
+            <h1 id="themesTitle">Change your project theme</h1>
+            <br>
+            <div id="themesButtonContainer">
+                <button id="animals" class="themeBtn" onclick="alert('The Animals project is still under construction, please try our space theme!')">Animals</button>
+                <button id="space" class="themeBtn" onclick="selectTheme(this.id)">Space</button>
+                <button id="foodAndDrink" class="themeBtn" onclick="alert('The Food and Drink project is still under construction, please try our space theme!')">Food and Drink</button>
+            </div>
+            <br><br><br><br><br>
+            <a>Warning: Changing themes will restart your progress!</a>
+        </div>
+
+        <div id="darken"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/scripts.js"></script>
+    </body>
+</html>

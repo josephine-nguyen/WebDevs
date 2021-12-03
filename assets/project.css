@@ -1,0 +1,99 @@
+.projectContainer {
+    background-color: #e0ffef;
+	-webkit-box-shadow: 0 5px 8px 3px rgba(0, 0, 0, .5);
+	box-shadow: 0 5px 8px 3px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    width: 85vw;
+    top: 6rem;
+    height: 80vh;
+    left: 7.5vw;
+    position: fixed;
+    text-align: center;
+    overflow-y: auto;
+    font-size: 1.5rem;
+}
+
+#progressBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activityProgress {
+    margin: 1rem;
+}
+
+.currentActivity > img {
+    opacity: 100%;
+}
+
+.activityProgressImage {
+    width: 3rem; 
+    margin-top: 1rem; 
+    opacity: 50%;
+}
+
+.checkmark {
+    opacity: 0%;
+    font-weight: bold; 
+    margin-top: 0rem;
+}
+
+.completed {
+    opacity: 100%;
+}
+
+#text {
+    text-align: left;
+}
+
+#text > div {
+    margin: 2rem;
+}
+
+code {
+    font-family: Consolas,"courier new";
+    color: #008d81;
+    padding: 2px;
+}
+
+#activityArea {
+    background-color: #ecf5f0;
+    width: 80%;
+    height: 50vh;
+    border-radius: 15px;
+    margin-left: 10%;
+	-webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .25);
+	box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .25);
+    text-align: left;
+    overflow-y: auto;
+}
+
+#activityArea > div {
+    margin: 2rem;
+}
+
+.inactive {
+    display: none;
+}
+
+.hidden {
+    opacity: 0%; 
+    cursor: initial;
+}
+
+input {
+    border: none;
+    height: 1.5rem;
+    width: 2rem;
+    padding: 1px 2px;
+    display: inline-block;
+}
+
+#showCodeButton {
+    margin-left: -67%;
+}
+
+#submitButton {
+    margin-right: -70%;
+}
